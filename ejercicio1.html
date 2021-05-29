@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <div>
+        <div id="cambiarme">
+            <div style="background-color:red;border: 1px solid gray;margin:10px;padding: 10px">
+                <span>haz click!!!</span>
+            </div>
+            <div style="background-color:white;border: 1px solid gray;margin:10px;padding: 10px">
+                <span>Cambiame</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#cambiarme > div:eq(0)').click(function() {
+                $('#cambiarme > div:eq(1)').css('background-color','red');
+                $('#cambiarme > div:eq(1)').css('padding','50px')
+
+            })
+            
+        });
+
+
+    </script>
+</body>
+
+</html>
